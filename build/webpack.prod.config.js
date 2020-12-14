@@ -98,7 +98,7 @@ module.exports = webpackMerge(baseWebpackConfig,{
                 // 拆分基础插件
                 basic: {
                     priority: 3, 
-                    test: /[\\/]node_modules[\\/](moment|react|react-dom|react-router|react-router-dom|mobx|mobx-react|axios)[\\/]/,
+                    test: /[\\/]node_modules[\\/](dayjs|react|react-dom|react-router|react-router-dom|mobx|mobx-react|axios)[\\/]/,
                 },
                 // 默认的配置
                 vendors: {
