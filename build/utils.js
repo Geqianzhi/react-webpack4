@@ -74,9 +74,3 @@ exports.assetsPath = function (_path) {
 }
 
 exports.cssLoaders = cssLoaders;
-
-function all(){
-    console.log(cssLoaders({extract:true}))
-}
-
-all()

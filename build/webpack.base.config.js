@@ -1,6 +1,7 @@
 const utils = require("./utils")
 const path = require("path");
-const Webpack = require("webpack")
+const Webpack = require("webpack");
+const AntdDayjsWebpackPlugin = require('antd-dayjs-webpack-plugin');
 module.exports = {
     // 入口
     // ["react-hot-loader/patch",'./src/index']
@@ -108,6 +109,7 @@ module.exports = {
             'process.env': {
                 APP_ENV:JSON.stringify(process.env.NODE_ENV)
             },
-        })
+        }),
+        new AntdDayjsWebpackPlugin()
     ],
 }
