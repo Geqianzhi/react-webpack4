@@ -15,7 +15,7 @@ module.exports = webpackMerge(baseWebpackConfig,{
     // 插件
     output: {
         path : utils.resolve("../dist"),
-        filename: utils.assetsPath("js/[name].[hash].js") ,
+        filename: utils.assetsPath("js/[name].[contenthash].js") ,
         chunkFilename: utils.assetsPath("js/[name].[chunkhash].js"),
         publicPath: "/" // 打包后的资源的访问路径前缀
     },
@@ -25,8 +25,8 @@ module.exports = webpackMerge(baseWebpackConfig,{
     },
     plugins:[
         new MiniCssExtractPlugin({
-            filename: utils.assetsPath('css/[name].[hash].css'),
-            chunkFilename: utils.assetsPath('css/[id].[chunkhash].css'),
+            filename: utils.assetsPath('css/[name].[contenthash].css'),
+            chunkFilename: utils.assetsPath('css/[id].[contenthash].css'),
         }),
         new HtmlWebpackPlugin({
             filename: utils.resolve('./../dist/index.html'), // html模板的生成路径
