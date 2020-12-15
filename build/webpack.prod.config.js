@@ -74,7 +74,7 @@ module.exports = webpackMerge(baseWebpackConfig,{
             // initial表示只从入口模块进行拆分
             // all表示以上两者都包括
             chunks: "all",
-            minSize: 30000,   // 大于30k会被webpack进行拆包
+            minSize: 20000,   // 大于30k会被webpack进行拆包
             minChunks: 1,     // 被引用次数大于等于这个次数进行拆分
             // import()文件本身算一个
             // 只计算js，不算css
