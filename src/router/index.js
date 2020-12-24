@@ -61,6 +61,19 @@ export const childernRoutes = [
             }
         ]
     },
+    {
+        path:'/Arithmetic',
+        name:'Arithmetic',
+        icon:<WindowsOutlined />,
+        childrens:[
+            {
+                path:'/Arithmetic/linked',
+                icon:<AlertOutlined />,
+                name:'链表篇',
+                component: React.lazy(() => import ('../view/page/Arithmetic/linked')),
+            }
+        ]
+    },
 ]
 
 const routes = [

@@ -12,8 +12,8 @@ module.exports = webpackMerge(baseWebpackConfig,{
     plugins:[
         new WebpackBar(
             {
-                name:"gqz",
-                color:"#0366d6"
+                name:"戈乾志",
+                color:"red"
             }
         ),
         new HtmlWebpackPlugin({
