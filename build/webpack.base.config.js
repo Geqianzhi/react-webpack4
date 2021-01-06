@@ -94,7 +94,7 @@ module.exports = {
                 //     name: 'static/icon/[name].[contenthash].[ext]',
                 //     symbolId: 'icon-[name]'
                 // }
-                include:[utils.resolve('src/icons')],
+                include:[utils.resolve('../src/icons')],
                 use: [
                     { loader: 'svg-sprite-loader', 
                         options: {
@@ -109,7 +109,7 @@ module.exports = {
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 loader: 'url-loader',
-                exclude:[utils.resolve('src/icons')],
+                exclude:[utils.resolve('../src/icons')],
                 options: {
                     limit: 10000, // url-loader 包含file-loader，这里不用file-loader, 小于10000B的图片base64的方式引入，大于10000B的图片以路径的方式导入
                     name: 'static/imgs/[name].[contenthash].[ext]'
@@ -118,6 +118,7 @@ module.exports = {
             {
                 test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
                 loader: 'url-loader',
+                exclude:[utils.resolve('../src/icons')],
                 options: {
                     limit: 10000, // 小于10000B的图片base64的方式引入，大于10000B的图片以路径的方式导入
                     name: 'static/fonts/[name].[contenthash].[ext]'
