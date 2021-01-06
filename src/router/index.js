@@ -74,6 +74,19 @@ export const childernRoutes = [
             }
         ]
     },
+    {
+        path:'/svgIcon',
+        name:'svgIcon',
+        icon:<WindowsOutlined />,
+        childrens:[
+            {
+                path:'/Icons/index',
+                icon:<AlertOutlined />,
+                name:'svg的封装',
+                component: React.lazy(() => import ('../view/page/Icons/index')),
+            }
+        ]
+    },
 ]
 
 const routes = [

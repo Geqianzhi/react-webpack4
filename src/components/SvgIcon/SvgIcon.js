@@ -14,14 +14,14 @@ const SvgIcon = ({ iconClass, className }) => {
     const iconName = `#icon-${iconClass}`
 
     return (
-        <div>
+        <>
             {isExternal(iconClass) ? 
                 <div style={styleExternalIcon} className={`svg-external-icon ${svgClass}`} /> :
                 <svg className={svgClass} aria-hidden="true">
                     <use xlinkHref={iconName} />
                 </svg>
                 }
-        </div>
+        </>
     )
 }
 

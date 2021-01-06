@@ -25,7 +25,7 @@ export default function Flex(props) {
                 <DatePicker onChange={onChange} picker="quarter" />
                 <DatePicker onChange={onChange} picker="year" />
             </Space>
-            <div className="svg"><SvgIcon iconClass="edit"></SvgIcon></div>
+            <div className="svg"><SvgIcon iconClass="404"></SvgIcon></div>
         </div>
     )
 }

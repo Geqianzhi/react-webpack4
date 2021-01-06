@@ -98,11 +98,13 @@ module.exports = {
                 use: [
                     { loader: 'svg-sprite-loader', 
                         options: {
-                                    
-                                    // name: 'static/icons/[name].[contenthash].[ext]',
+                                    limit: 10000,
+                                    name: 'static/icons/[name].[contenthash].[ext]',
                                     symbolId: 'icon-[name]'
                         } 
-                    }
+                    },
+                    'svg-transform-loader',
+                    'svgo-loader'
                 ]
                 
             },
