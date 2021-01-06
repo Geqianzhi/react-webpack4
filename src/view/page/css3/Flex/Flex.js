@@ -1,5 +1,6 @@
 import React from 'react'
 import { DatePicker, Space } from 'antd';
+import SvgIcon from '../../../../components/SvgIcon/SvgIcon'
 import './Flex.less'
 export default function Flex(props) {
     function onChange(date, dateString) {
@@ -24,6 +25,7 @@ export default function Flex(props) {
                 <DatePicker onChange={onChange} picker="quarter" />
                 <DatePicker onChange={onChange} picker="year" />
             </Space>
+            <div className="svg"><SvgIcon iconClass="edit"></SvgIcon></div>
         </div>
     )
 }
