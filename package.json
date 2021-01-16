@@ -54,7 +54,7 @@
     "webpackbar": "^5.0.0-3"
   },
   "dependencies": {
-    "antd": "^4.9.2",
+    "antd": "^4.10.0",
     "axios": "^0.21.0",
     "dayjs": "^1.9.7",
     "mobx": "^6.0.4",

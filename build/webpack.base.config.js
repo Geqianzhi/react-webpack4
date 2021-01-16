@@ -103,8 +103,12 @@ module.exports = {
                                     symbolId: 'icon-[name]'
                         } 
                     },
-                    'svg-transform-loader',
-                    'svgo-loader'
+                    {
+                        loader:"svg-transform-loader"
+                    },
+                    {
+                        loader:'svgo-loader'
+                    }
                 ]
                 
             },

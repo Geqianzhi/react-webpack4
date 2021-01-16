@@ -94,7 +94,7 @@ export function get(url,params={}){
     })
 }
 
-export function post(url,data,type='body'){
+export function post(url,data,type='params'){
     return new Promise((reslove ,reject)=>{
         if(type==='body'){
             instance.post(url,{...data})
@@ -106,7 +106,9 @@ export function post(url,data,type='body'){
         }
         if(type==='params'){
             instance.post(url,null,{
-                params:data
+                params:{
+                  ...data
+                }
             })
             .then(res =>{
                 reslove(res)

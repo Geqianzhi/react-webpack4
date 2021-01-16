@@ -47,7 +47,7 @@ module.exports = webpackMerge(baseWebpackConfig,{
         proxy: {
             // 接口请求代理
             "/api": {
-                target: "http://192.168.1.87:9000/",
+                target: "http://192.168.31.89:8787/",
                 changeOrigin: true,
                 pathRewrite: {//地址重写
                   '^/api': "/"
